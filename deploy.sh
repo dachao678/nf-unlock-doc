@@ -11,7 +11,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:Qinhank/nf-unlock-doc.git
 else
   msg='来自github action的自动部署'
-  githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/Qinhank/nf-unlock-doc.git
+  githubUrl=https://${GITHUB_TOKEN}@github.com/Qinhank/nf-unlock-doc.git
   git config --global user.name "hankqin"
   git config --global user.email "hankqin@github.com"
 fi
