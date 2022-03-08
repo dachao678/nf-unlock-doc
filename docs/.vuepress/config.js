@@ -18,6 +18,11 @@ module.exports = {
   // 主题配置
   themeConfig: {
     search: false,
+    repo: 'Qinhank/nf-unlock-doc', // Github仓库地址
+    docsDir: 'docs', // .md文件放在了docs目录下
+    editLinks: true, // 启用编辑链接
+    docsBranch: 'main',
+    editLinkText: '编辑',
     nav: false,
     // nav: [
     //   // { text: '首页', link: '/' },
