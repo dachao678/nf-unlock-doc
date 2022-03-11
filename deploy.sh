@@ -5,7 +5,7 @@ npm run build # 生成静态文件
 cd docs/.vuepress/dist # 进入生成的文件夹
 
 # deploy to github
-echo 'doc.hankqin.online' > CNAME
+echo 'doc.nfddns.top' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:Qinhank/nf-unlock-doc.git
