@@ -22,10 +22,3 @@ git push -f $githubUrl master:gh-pages # 推送到github
 
 cd -
 rm -rf docs/.vuepress/dist
-ls
-
-# 更新到服务器
-echo ${ID_RSA} > nf_doc
-chmod 400 nf_doc
-ssh -i nf_doc ${USER}@${HOST} "cd /nf-unlock-doc && git pull"
-rm -rf nf_doc
