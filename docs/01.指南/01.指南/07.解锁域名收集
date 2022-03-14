@@ -1,0 +1,47 @@
+## 解锁域名收集
+方便将需要解锁的内容，添加到DNS的分流设置规则内
+示例添加奈飞，迪士尼和动画疯分流：
+``` json
+   "dns": {
+    "servers": [
+      "1.1.1.1","8.8.8.8", 
+      {
+        "address": "4.4.4.4（以实际为准）", 
+        "port": 53,
+        "domains": [
+           "geosite:netflix","geosite:disney",gamer.com.tw,bahamut.com.tw,hinet.net,fbcdn.net,gvt1.com,digicert.com,viblast.com
+        ]
+      }
+    ]
+  }
+```
+
+## 动画疯
+
+```shell
+gamer.com.tw
+bahamut.com.tw
+hinet.net
+fbcdn.net
+gvt1.com
+digicert.com
+viblast.com
+```
+
+## HBO
+
+```shell
+conviva.com
+go.com
+hbo.com
+hbogo.com
+hbonow.com
+hboasia.com
+hbogo.com
+hbogoasia.hk
+44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
+bcbolthboa-a.akamaihd.net
+cf-images.ap-southeast-1.prod.boltdns.net
+manifest.prod.boltdns.net
+s3-ap-southeast-1.amazonaws.com
+```
