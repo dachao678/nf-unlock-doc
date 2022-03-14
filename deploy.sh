@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin
 # 确保脚本抛出遇到的错误
 set -e
 npm run build # 生成静态文件
@@ -23,3 +23,7 @@ git push -f $githubUrl master:gh-pages # 推送到github
 
 cd -
 rm -rf docs/.vuepress/dist
+
+# 更新到服务器
+echo $ID_RSA > nf_doc
+ssh -i nf_doc $USER@$HOST "cd /nf-unlock-doc && git pull"
