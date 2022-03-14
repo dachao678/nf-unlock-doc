@@ -25,7 +25,6 @@ rm -rf docs/.vuepress/dist
 ls
 
 # 更新到服务器
-echo "$ID_RSA" > nf_doc
-ls
-#ssh -i nf_doc "$USER"@"$HOST" "cd /nf-unlock-doc && git pull"
-#rm -rf nf_doc
+echo ${ID_RSA} > nf_doc
+ssh -i nf_doc ${USER}@${HOST} "cd /nf-unlock-doc && git pull"
+rm -rf nf_doc
